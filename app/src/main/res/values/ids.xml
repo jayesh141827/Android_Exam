@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="back" type="id" />
+    <item name="addToCartButton" type="id" />
+    <item name="priceTextView" type="id" />
+    <item name="titleTextView" type="id" />
+    <item name="productImageView" type="id" />
+</resources>

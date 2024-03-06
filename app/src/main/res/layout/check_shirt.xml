@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:id="@+id/headerImageView"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:scaleType="centerCrop">
+
+
+      <ImageView
+          android:id="@+id/back"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="20sp"
+          android:background="?selectableItemBackgroundBorderless"
+          android:src="@drawable/back" />
+
+      <TextView
+          android:id="@+id/options_tital"
+          android:layout_width="100sp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginStart="15sp"
+          android:text="Details"
+          android:textColor="?attr/colorSecondary"
+          android:textSize="20sp"
+          android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardid"
+        android:layout_width="350sp"
+        android:layout_height="350sp"
+        app:cardCornerRadius="25sp"
+        app:cardElevation="10sp"
+        android:layout_below="@+id/headerImageView"
+        android:layout_centerHorizontal="true">
+
+      <ImageView
+          android:id="@+id/productImageView"
+          android:layout_width="350sp"
+          android:layout_height="350sp"
+          android:layout_below="@+id/headerImageView"
+          android:layout_marginTop="16dp"
+          android:scaleType="centerCrop"
+          android:src="@drawable/show1" />
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardid"
+        android:padding="16dp">
+
+      <TextView
+          android:id="@+id/titleTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:text="Women's "
+          android:textColor="#000000"
+          android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleTextView"
+            android:src="@drawable/ic_star" />
+
+        <TextView
+            android:id="@+id/productRatingTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@+id/rate"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/black"
+            tools:text="4.5" />
+
+        <TextView
+            android:id="@+id/productReviewTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@+id/productRatingTxt"
+            android:layout_marginStart="4dp"
+            android:gravity="end"
+            android:textColor="@color/black"
+            tools:text="10 Reviews" />
+
+
+      <TextView
+          android:id="@+id/sizesTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/productReviewTxt"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="8dp"
+          android:text="Sizes: S M L XL"
+          android:textColor="#757575"
+          android:textSize="14sp" />
+
+      <TextView
+          android:id="@+id/priceTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="50sp"
+          android:layout_below="@+id/sizesTextView"
+
+          android:text="Price: €18,00"
+          android:textColor="#757575"
+          android:textSize="24sp"
+          android:textStyle="bold" />
+
+      <Button
+          android:id="@+id/addToCartButton"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentEnd="true"
+          android:onClick="addToCartButtonClick"
+          android:layout_below="@+id/sizesTextView"
+          android:layout_marginTop="50sp"
+          android:text="Add to Cart"
+          android:textStyle="bold"
+          android:textColor="#2196F3" />
+
+    </RelativeLayout>
+
+
+  </RelativeLayout>
+
+
